@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --default: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--default);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+p {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.navlogo, .navlinks {
+    padding: 0.5rem 0rem;
+    display: flex;
+    margin: auto;
+}
+
+.navlinks a {
+    text-decoration: none;
+    margin: 0rem 1rem;
+    color: black;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.memebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section {
+    display: flex;
+}
+
+.boxes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    margin: 1rem;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgb(204, 203, 203);
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px rgb(117, 116, 116);
+}
+
+.boxes img {
+    width: 80%;
+    margin: auto;
+}
+
+
+.allimgs:active {
+    transform: scale(0.9);
+}
+
+.aboutbox {
+    min-height: 80vh;
+    padding: 6rem 2rem;
+}
+
+.aboutbox .abouters h1 {
+    font-size: 4rem;
+    padding: 1rem 0rem;
+}
+
+.aboutbox .abouters p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+@media screen and (max-width: 750px) {
+    .aboutbox .abouters h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    .boxes img {
+        width: 100%;
+    }
+
+    .aboutbox .abouters p {
+        font-size: 1rem;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+
+    .aboutbox {
+        padding: 5rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .aboutbox .abouters h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer h3 {
+        font-size: 3.8vw;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+}
+
